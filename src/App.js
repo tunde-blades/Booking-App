@@ -1,6 +1,5 @@
-import './App.css';
 import {BrowserRouter} from 'react-router-dom'
-import AllRoutes from './routes/AllRoutes';
+import AllRoutes from './routes/AllRoutes'
 
 
 function App() {
