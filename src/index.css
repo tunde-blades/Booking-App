@@ -9,6 +9,9 @@
 .navsmobile{
     display: none;
 }
+.navs{
+    gap: 10px;
+}
 .content{
     margin-bottom: 50px;
 }

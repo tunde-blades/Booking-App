@@ -31,7 +31,7 @@ export default function Header() {
                     <li className='cursor-pointer'>Contact us</li>
                 </nav>
                 {
-                    openNav && <nav className='flex  text-gray-900 navsmobile'>
+                    openNav && <nav className='text-gray-900 navsmobile'>
                     <li className='text-blue-800 cursor-pointer'>Home</li>
                     <li className='cursor-pointer'>About us</li>
                     <li className='cursor-pointer'>Catalog</li>
