@@ -3,6 +3,7 @@ import logo from '../../assets/images/logo.svg'
 import Loginbtn from '../../components/buttons/Loginbtn'
 import SignUpbtn from '../../components/buttons/SignUpbtn'
 import { useState } from 'react'
+import {Menu, Cancel} from '@mui/icons-material';
 
 
 
@@ -20,7 +21,7 @@ export default function Header() {
         <header className='container box-border py-5 px-10'>
         <menu className='flex space-x-10 items-center justify-between'>
                 <picture className='logo'>
-                    <span onClick={displayNav}>menu</span>
+                    <span onClick={displayNav}>{openNav ? <Cancel className='text-gray-400'/>:<Menu className='text-gray-400'/>}</span>
                     <img className='w-10' src={logo} alt="" />
                 </picture>
                 <nav className='flex  text-gray-900 navs'>
