@@ -60,7 +60,7 @@ useEffect(() => {
           )).slice(0, 8)}
         </div>
       </section>
-       <section className=' overflow-hidden'>
+       <section className=' overflow-hidden projects'>
         <h1 className='font-bold px-3'>Projects and Reasearch</h1>
             <div className='flex flex-row min-w-max p-2 gap-2'>
           {books.map(book =>(

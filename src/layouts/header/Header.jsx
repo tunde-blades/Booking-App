@@ -25,7 +25,6 @@ export default function Header() {
                 </picture>
                 <nav className='flex  text-gray-900 navs'>
                     <li className='text-blue-800 cursor-pointer'>Home</li>
-                    <li className='cursor-pointer'>About us</li>
                     <li className='cursor-pointer'>Catalog</li>
                     <li className='cursor-pointer'>Author</li>
                     <li className='cursor-pointer'>Contact us</li>
@@ -33,7 +32,6 @@ export default function Header() {
                 {
                     openNav && <nav className='text-gray-900 navsmobile'>
                     <li className='text-blue-800 cursor-pointer'>Home</li>
-                    <li className='cursor-pointer'>About us</li>
                     <li className='cursor-pointer'>Catalog</li>
                     <li className='cursor-pointer'>Author</li>
                     <li className='cursor-pointer'>Contact us</li>
