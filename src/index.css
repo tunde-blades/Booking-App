@@ -1,3 +1,53 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.logo span{
+    display: none;
+}
+.navsmobile{
+    display: none;
+}
+.content{
+    margin-bottom: 50px;
+}
+
+
+@media (max-width:700px) {
+    .content{
+        padding-top: 50px;
+    }
+    .bgimage img{
+        display: none;
+    }
+    .navs{
+        display: none;
+    }
+    .navsmobile{
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        top: 80px;
+        left: -40px;
+        backdrop-filter: blur(5px);
+        width: 200px;
+        height: 200px;
+        gap: 10px;
+        padding: 20px;
+        font-size: 18px;
+        font-weight: bold;
+    }
+    .logo span{
+        display: block;
+    }
+    .logo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+
+    }
+
+
+
+}
