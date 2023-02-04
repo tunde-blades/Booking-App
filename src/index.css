@@ -4,6 +4,7 @@
 
 .logo span{
     display: none;
+    cursor: pointer;
 }
 .navsmobile{
     display: none;
