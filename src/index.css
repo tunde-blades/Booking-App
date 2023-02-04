@@ -16,6 +16,7 @@
 @media (max-width:700px) {
     .content{
         padding-top: 50px;
+        text-align: center;
     }
     .bgimage img{
         display: none;
