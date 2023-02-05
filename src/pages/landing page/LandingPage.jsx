@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from 'react'
 import Header from '../../layouts/header/Header'
 import image1 from '../../assets/images/landingimage.png'
-import { Search, HeartBrokenOutlined} from '@mui/icons-material';
+import { Search, FavoriteBorderOutlined} from '@mui/icons-material';
 
 
 export default function LandingPage() {
@@ -58,7 +58,7 @@ useEffect(() => {
                 <p className='text-blue-300'>{book.dscription}</p>
                 <div className='flex flex-row gap-2 items-center'>
                   <button className='accessbtn'>Get access</button>
-                  <span><Heart/></span>
+                  <span><FavoriteBorderOutlined/></span>
                 </div>
               </div>
           )).slice(0, 8)}
@@ -74,7 +74,7 @@ useEffect(() => {
                 <p className='text-blue-300'>{book.dscription}</p>
                 <div className='flex flex-row gap-2 items-center'>
                   <button className='accessbtn'>Get access</button>
-                  <span>love</span>
+                  <span><FavoriteBorderOutlined/></span>
                 </div>
               </div>
           )).slice(0, 8)}
