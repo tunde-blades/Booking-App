@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from 'react'
 import Header from '../../layouts/header/Header'
 import image1 from '../../assets/images/landingimage.png'
-import { Search} from '@mui/icons-material';
+import { Search, HeartBrokenOutlined} from '@mui/icons-material';
 
 
 export default function LandingPage() {
@@ -48,9 +48,9 @@ useEffect(() => {
             <img src={image1} alt="" />
           </picture>
       </section>
-      <section className=' overflow-scroll'>
-        <h1 className='font-bold px-3'>Recent Books</h1>
-            <div className='flex flex-row overflow-hidden min-w-max p-2 gap-2'>
+      <h1 className='font-bold px-3'>Top Books</h1>
+      <section className=' overflow-scroll topbooks'>
+            <div className='flex flex-row min-w-max p-2 gap-2'>
           {books.map(book =>(
               <div className='flex flex-col w-40 overflow-hidden items-center justify-between bg-gray-100 p-2 rounded shadow-md' key={book.id}>
                 <picture><img className='max-w-14 flex-1' src={book.url} alt="" /></picture>
@@ -58,14 +58,14 @@ useEffect(() => {
                 <p className='text-blue-300'>{book.dscription}</p>
                 <div className='flex flex-row gap-2 items-center'>
                   <button className='accessbtn'>Get access</button>
-                  <span>love</span>
+                  <span><Heart/></span>
                 </div>
               </div>
           )).slice(0, 8)}
         </div>
       </section>
-       <section className=' overflow-hidden projects'>
-        <h1 className='font-bold px-3'>Projects and Reasearch</h1>
+      <h1 className='font-bold px-3'>Projects and Reasearch</h1>
+      <section className=' overflow-scroll projects'>
             <div className='flex flex-row min-w-max p-2 gap-2'>
           {books.map(book =>(
               <div className='flex flex-col w-40 overflow-hidden items-center justify-between bg-gray-100 p-2 rounded shadow-md' key={book.id}>
